@@ -1,4 +1,4 @@
-name: Dynamic Job Name Workflow-"${{job_name}}"
+name: Dynamic Job Name Workflow
 on:
   workflow_dispatch:
     inputs:
@@ -15,5 +15,3 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run a script
-        run: echo "This job is named: ${{ github.event.inputs.job_name }}"
