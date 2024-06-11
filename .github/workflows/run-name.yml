@@ -1,4 +1,4 @@
-name: Dynamic Job Name Workflow
+name: Dynamic Job Name Workflow-${{job_name}}
 on:
   workflow_dispatch:
     inputs:
