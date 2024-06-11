@@ -1,6 +1,6 @@
 name: Dynamic Job Name Workflow
 run-name: >-
-  ${{ job_name }}
+  ${{job_name}}
 on:
   workflow_dispatch:
     inputs:
