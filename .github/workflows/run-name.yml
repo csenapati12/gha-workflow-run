@@ -1,4 +1,5 @@
-name: Dynamic Job Name Workflow
+name: workflow-dynamic
+run-name: workflow-dynamic-"${{ github.event.inputs.job_name }}"
 on:
   workflow_dispatch:
     inputs:
